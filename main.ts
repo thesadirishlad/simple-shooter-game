@@ -1,5 +1,5 @@
 scene.setBackgroundColor(1)
-let mySprite = sprites.create(img`
+let test = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . f f . . . . . 
@@ -17,4 +17,4 @@ let mySprite = sprites.create(img`
     . . . f f f f f f f f f . . . . 
     . . . f f . . . . . . . . . . . 
     `, SpriteKind.Player)
-controller.moveSprite(mySprite)
+controller.moveSprite(test)

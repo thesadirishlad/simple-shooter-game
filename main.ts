@@ -20,9 +20,6 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     music.bigCrash.play()
 })
 sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite, otherSprite) {
-    info.changeLifeBy(-1)
-})
-info.onLifeZero(function () {
     game.over(false)
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
@@ -69,5 +66,4 @@ let soldier = sprites.create(img`
     `, SpriteKind.Enemy)
 controller.moveSprite(test)
 soldier.follow(test, 40)
-info.setLife(3)
 soldier.setPosition(0, 0)
